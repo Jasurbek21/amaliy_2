@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class = "main">
+        <div class = "main_opacity">
+          <div class = "card">
+            <div class="container">
+              <form class = "form" action="" method="post">
+                {% csrf_token %}
+                <p align = "center">Contact us</p>
+                <div class = "login-input">
+                    {{ form|crispy }}
+                </div>
+                <button class = "button5" type="submit">Jo'natish</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+{% endblock content %}
